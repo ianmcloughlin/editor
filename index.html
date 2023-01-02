@@ -1,0 +1,6 @@
+  <html contenteditable="true"><body></body></html>
+  <script>
+      const a=localStorage.getItem('saved-text-data');
+      document.querySelector('body').innerHTML=a;
+      setInterval(()=>{localStorage.setItem('saved-text-data', document.querySelector('body').innerHTML);}, 2000);
+  </script>
